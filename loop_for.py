@@ -20,3 +20,24 @@ for valor in enumerate(nome): # enumerate serve para informar o indice de cada c
 # (2, 'v')
 # (3, 'i')
 # (4, 'd')    
+
+qtd = int(input("Quantas vezes este loop pode se repetir? "))
+for n in range(1, qtd+1):
+    print(f'quantos mesmo  {n}')
+    
+
+    
+repetir = int(input('Quantas vezes esse deve repetir?'))
+for n in range(1, repetir + 1):
+    print(f'Deve repetir {n} vezes')
+
+
+qtd = int(input("Este aqui, vamos somar, quantas vezes deve rodar?"))
+soma = 0
+
+for n in range(1, qtd+1):
+    num = int(input(f"Informe o número{n}/{qtd} valor"))
+    soma = soma + num
+    print(f"a soma é {soma}")
+    
+    
