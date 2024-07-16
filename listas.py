@@ -1,5 +1,5 @@
 """
-david = "bom"
+
 lista1 = [1, 1, 3 ,4 ,5, 10, 100, 3, 56.7]
 
 print(lista1)
@@ -18,6 +18,8 @@ lista1.append(123)
 print(lista1)
 """
 
+
+"""
 lista1 = [1, 1, 3 ,4 ,5, 10, 100, 3, 56.7]
 lista2 = ([5, 6, 8])
 if [5, 6, 8] in lista2:
@@ -77,3 +79,29 @@ print(lista10)
 lista10 = "#".join(lista10) # Exemplo adicionando outro caracter
 print(lista10)
 
+for elemento in lista10:
+    print(f'Lista 10 é {elemento}')
+"""    
+
+lista11 = [56, 58, 18, 87]
+soma = 0
+for elemento in lista11:
+    print(elemento)
+    soma = soma + elemento
+print(f'A Soma é {soma}')
+
+carrinho = []
+produto = ''
+
+while produto != "sair":
+    print("Adicione um produto na lista ou digite sair: ")
+    produto = input()
+    if produto != "sair":
+        carrinho.append(produto)
+        
+print("Total de produtos")
+for produto in carrinho:
+    print(produto)
+     
+    
+           
