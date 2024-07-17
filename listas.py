@@ -83,6 +83,8 @@ for elemento in lista10:
     print(f'Lista 10 é {elemento}')
 """    
 
+
+"""
 lista11 = [56, 58, 18, 87]
 soma = 0
 for elemento in lista11:
@@ -103,5 +105,67 @@ print("Total de produtos")
 for produto in carrinho:
     print(produto)
      
+print(f'total de produtos ',produto)
+print(carrinho)    
+"""
+
+cores = ["preto", "branco", "vermelho"]
+
+print(cores[2]) # busca por indice
+print(cores[-3]) # busca por indice de forma inversa
+
+# Gerar indice em um for
+for indice, cor in enumerate(cores):
+    print(indice, cor)
+
+
+numeros = [1, 5, 6, 7, 8, 9, "Playstation", 10, 15]
+# procurando o indice de um elemento na lista
+print(numeros.index(6)) # o elemento 6 está no index 2
+print(numeros.index("Playstation")) # Procurando o index do elemento playstaion = 6
+
+print(numeros.index(10, 3)) # Buscando elemento 10 a partir do index 3
+print(numeros.index("Playstation", 2))
+
+#slice - inicio, fim, passo
+print(numeros[2:]) # pegando elementos a partir do index dois
+print(numeros[2:8]) # pegando elementos do index dois até index 8
+print(numeros[::2]) # pegando elementos do index em dois em dois
+
+# trocando elementos. Elemento na posição zero vai trocar de lugar com o da posição 6
+numeros[0], numeros[6] = numeros[6], numeros[0]
+print(numeros)
     
-           
+# matematica em listas
+numeros2 = [1, 2, 50, 500, 800,  900, 521.5]
+print(sum(numeros2)) # soma
+print(max(numeros2)) # Encontra o maior elemento da lista
+print(min(numeros2)) # Encontra o menor elemento da lista
+print(len(numeros2)) # Quantos elementos tem na lista
+
+# Tipo de dados usando type
+print(type(numeros2)) # resposta> list
+
+# Transformando uma lista [] numa tupla ()
+tupla = tuple(numeros2)
+print(numeros2)
+print(type(tupla))
+
+
+# deep copy - copia uma lista sem alterar a antiga
+listanova = numeros.copy()
+print(listanova)
+listanova.append("Switch") # a antiga lista não será alterada.
+print(numeros)
+print(listanova)
+          
+# Shallow copy - copia uma lista, se alterar essa nova lista, a antiga também será alterada.
+
+nova = listanova
+print(listanova) # ['Playstation', 5, 6, 7, 8, 9, 1, 10, 15, 'Switch']
+nova.append("Nintendo")
+print(listanova) # ['Playstation', 5, 6, 7, 8, 9, 1, 10, 15, 'Switch', 'Nintendo']
+print(nova) # ['Playstation', 5, 6, 7, 8, 9, 1, 10, 15, 'Switch', 'Nintendo']
+
+
+          
