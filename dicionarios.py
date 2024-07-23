@@ -1,4 +1,6 @@
 # Dicionários cont
+
+"""
 dicionario = {'david':'Machado', 'Aline': 'Machado', 'Arthur': 'Machado'}
 paises = {'br': 'Brasil', 'us': 'USA', 'ar': 'Argentina', 'es': 'Espanha'}
 
@@ -39,4 +41,53 @@ print(telefones)
 receita = {'jan': 100, 'fev': 100, 'mar': {500}, 'Abr': {400}}
 receita['mai'] = 800
 print(receita) # {'jan': 100, 'fev': 100, 'mar': {500}, 'Abr': {400}, 'mai': 800}
+
+# Atualizando um dicionário
+receita.update({'mar': 600}) 
+print(receita)
+
+# Remover dados de um dicionário
+receita.pop('jan') # no caso do dicionário, o pop usa a chave para remover iténs
+print(receita)
+
+# Outra forma de remover iténs
+del receita['fev']
+print(receita)
+
+receita.update({'jan': 300})
+receita.update({'fev': 500})
+print(receita)
+
+carrinho = []
+produto1 = {'nome': 'ps5', 'quantidade': 30, 'preço': 4100}
+produto2 = {'nome': 'ns', 'quantidade': 50, 'preço': 1900}
+carrinho.append(produto1)
+carrinho.append(produto2)
+
+print(carrinho)
+carrinho.append({'nome': 'xbox', 'quantidade': 20 ,'preço': 2900})
+print(carrinho)
+"""
+
+dicionario2 = dict(a=2, c=3, b=5, t=80)
+print(type(dicionario2))
+
+# limpar dicionário
+dicionario2.clear()
+print(dicionario2)
+
+dicionario3 = dict(a=2, c=3, b=5, t=80, y=40)
+
+# Copiando um dicionário modo 1 (deep copy - sem alterar a original)
+copiando = dicionario3.copy()
+copiando ['df'] = 54 # atualizando colocando uma chave a mais
+print(copiando)
+print(dicionario3)
+
+
+# Copiando um dicionário modo 2 (shallon copy - original também é alterado)
+copiando = dicionario3
+copiando['sp'] = 120
+print(copiando)
+print(dicionario3)
 
