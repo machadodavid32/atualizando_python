@@ -91,3 +91,38 @@ copiando['sp'] = 120
 print(copiando)
 print(dicionario3)
 
+receita = {'jan': 100, 'fev': 100, 'mar': 500, 'Abr': 400}
+
+for chave in receita:
+    print(chave)
+    
+
+# melhorando    
+for chave in receita:
+    print(f'{chave}: {receita[chave]}')
+    
+    
+# Acessando somente as chaves
+print(receita.keys())  # dict_keys(['jan', 'fev', 'mar', 'Abr'])
+
+for chave in receita.keys():
+    print(receita[chave])
+
+# Acessando somente os valores
+print(receita.values())  # dict_values([100, 100, 500, 400])
+
+for valor in receita.keys():
+    print(receita[valor])
+    
+# Descompactando com items()
+for chave, valor in receita.items():
+    print(f'chave: {chave} e valor: {valor}')    
+    
+    
+
+# Também da pra somar, ver qual é o maior valor, menor, 
+print(sum(receita.values()))
+print(max(receita.values()))
+print(min(receita.values()))
+print(len(receita.values()))
+
