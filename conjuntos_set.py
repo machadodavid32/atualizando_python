@@ -82,3 +82,25 @@ print(f'Estudando Python e javas juntos: {juntos}')
 unicos2 = python | java
 print(unicos2)
 
+
+# Gerando um conjunto com os estudantes que estão cursando os dois cursos
+# Forma 1
+ambos = python.intersection(java)
+print(ambos)
+# Resposta: {'Julia', 'David', 'Sonia'}
+
+# Forma 2
+ambos1 = python & java
+print(ambos1)
+
+
+# Gerando um conjunto de estudantes que estudam em um curso apenas
+so_python = python.difference(java)
+print(f'Só estudando python temos: {so_python}')
+# Só estudando python temos: {'Tavares', 'Almeida', 'Chico'}
+
+so_java = java.difference(python)
+print(f'Só estudando java temos: {so_java}')
+# Só estudando java temos: {'Costa', 'Souza', 'Araújo'}
+
+# Da pra fazer coisas matematicas com sum, max, min, len desde que os valores sejam reais ou inteiros
