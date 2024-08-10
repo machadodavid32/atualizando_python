@@ -21,4 +21,6 @@ print(ray.idade) # acionando elementos de outra forma
 # Qual é o indice
 print(ray.index('Ilton')) # indice 2
 
-print(ray.count('vira lata'))
+# Quantas ocorrências deste valor tem na tupla
+print(ray.count('vira lata')) # 1 ocorrência
+
