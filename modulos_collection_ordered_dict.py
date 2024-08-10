@@ -27,3 +27,5 @@ print(dicionario2 == dicionario3) # Dicionário 2 é igual ao dicionário 3?
 dicionario4 = OrderedDict({'a': 1, 'b': 2})
 dicionario5 = OrderedDict({'b': 2, 'a': 1})
 print(dicionario4 == dicionario5)
+# False pois no orderedDict a ordem importa
+

@@ -18,4 +18,5 @@ print(dicionario)
 print(dicionario['outro']) # reparar que esta chave não existe
 # Resposta: 0 -> evitando erros
 
-print(dicionario)
+print(dicionario) # ao pedir pra imprimir novamente, a chave 'outro' receberá o valor zero
+# defaultdict(<function <lambda> at 0x0000020001EB04A0>, {'curso': 'programação em python', 'outro': 0})
