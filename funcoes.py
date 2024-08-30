@@ -79,4 +79,24 @@ def exponencial(numero, potencia=2): # dando um valor ao parâmetro, ele se torn
 
 print(exponencial(3)) # Sem informar o segundo parâmetro - padrão é 2
 print(exponencial(2, 3)) # Aqui informo o padrão - vai substituir o 2 
+
+
+
+# Funções com *args - gera tupla e te permite colocar quantos parâmetros quiser
+def soma_tudo(*args):
+    return sum(args)
+
+print(soma_tudo(6, 80, 4, 69)) # Tanto de parâmetros possiveis.
+
           
+# Funções com **kwargs - gera dicionários.
+def cores(**kwargs):
+    print(kwargs)
+
+cores(david="vermelho", aline='branco', arthur='preto') 
+# {'david': 'vermelho', 'aline': 'branco', 'arthur': 'preto'}
+
+# Ou seja, o *args serve para gerar tuplas e o **kwargs gera dicionarios - quantos quiser em ambos
+
+# obs: Os nomes das chaves em um dicionário devem ser os mesmos quando for utilizar a função
+              
