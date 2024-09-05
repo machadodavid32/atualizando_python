@@ -27,5 +27,8 @@ impares = [numero for numero in number if numero % 2 != 0] # Escolher par
 print(pares) # [2, 8, 40, 122]
 print(impares) # [5, 7, 125]
 
+res = [numero * 2 if numero % 2 == 0 else numero / 2 for numero in number]
+print(res) # Resposta: [4, 2.5, 3.5, 16, 80, 244, 62.5] dobrou pares e dividiu impares
+
 
 
