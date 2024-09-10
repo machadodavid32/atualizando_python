@@ -32,3 +32,9 @@ print(res) # Resposta: [4, 2.5, 3.5, 16, 80, 244, 62.5] dobrou pares e dividiu i
 
 
 
+"""Listas aninhadas """
+lista_aninhanda = [[1,2,3], [4,5,6], [7,8,9]]
+print(lista_aninhanda[0][2]) # vai acessar o indice 2 dentro do indice 0
+
+[[print(la) for la in lis] for lis in lista_aninhanda]
+# vai imprimir todos os valores da lista, um em cada linha
